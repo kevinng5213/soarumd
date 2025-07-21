@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head> <style >
+    body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        margin: 0;
+        padding: 20px;
+        background-color: #1b1717;
+        text-align: center;
+    }
+    h1 {
+        color: #0099ff;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h2 {
+        color: #0099ff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    p {
+        color: #0099ff;
+        line-height: 1.6;
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    button {
+        background-color: #0161a0;
+        color: white;
+        border: paleturquoise 1px solid;
+        padding: 10px 13px;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 162, 255); }
+}
+    
+</style>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamSOAR</title>
+    <h1>Team SOAR</h1>
+    <button onclick="location.href='https://github.com/kevinng5213/SOARWeb'">Visit our Github</button>
+    <h2 class="typewriter">Sustainable Operations for Aerial Robotics</h2>
+    <p class="typewriter">We are an undergraduate research team at the University of Maryland, College Park.</p>
+    <img src="https://static.wixstatic.com/media/cef383_c6b8fdd5d36b40d88c6d67d74da8d151~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_5472,h_3648,al_c/cef383_c6b8fdd5d36b40d88c6d67d74da8d151~mv2_d_5472_3648_s_4_2.jpg" alt="boy" class="w3-image" width="500" height="400">
+    <link rel="stylesheet" href="styles.css">
+</html>
