@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+</head>
+<body>
+    <div class="animated-bg">
+         <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+    <div class="timeline-heading">     
+    <h1 class="slide-in-bck-top">Our Timeline</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2 class="tracking-in-expand">Fall 2025</h2>
+            <li class="tracking-in-expand">Develop Initial Ideas</li>
+            <li class="tracking-in-expand">Begin Research</li> 
+        </div>
+        <div class="column">
+            <h2 class="tracking-in-expand">Spring 2026</h2>
+            <li class="tracking-in-expand">Develop Initial Ideas</li>
+            <li class="tracking-in-expand">Begin Research</li>
+        </div>
+         <div class="column">
+            <h2 class="tracking-in-expand">Fall 2026</h2>
+            <li class="tracking-in-expand">Develop Initial Ideas</li>
+            <li class="tracking-in-expand">Begin Research</li>
+        </div>
+         <div class="column">
+            <h2 class="tracking-in-expand">Spring 2027</h2>
+            <li class="tracking-in-expand">Develop Initial Ideas</li>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .h2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: #2d94da 2px 2px 4px;
+        z-index: 5;
+        color: aliceblue;
+    }
+    .animated-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+  background: linear-gradient(to top, #456ce2cb 0%, #8fa0f7 100%);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite;
+    }
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    .timeline-heading {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: #2d94da 2px 2px 4px;
+    z-index: 5;
+    color: aliceblue;
+    }
+    
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .column {
+        flex-basis: calc(25% - 40px);
+        margin: 20px;
+        text-align: center;
+    }
+    .tracking-in-expand {
+        animation: tracking-in-expand 1s ease-in-out both;
+    }
+    @keyframes tracking-in-expand {
+        from {
+            transform: scale(0.5);
+            opacity: 0.5;
+            letter-spacing: -0.5em;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+            letter-spacing: normal;
+        }
+    }
+
+    @-webkit-keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+            transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-top {
+  0% {
+    -webkit-transform: translateZ(700px) translateY(-300px);
+            transform: translateZ(700px) translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+.slide-in-bck-top {
+	-webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+	        animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 200px;
+  background-repeat: repeat-x;
+  opacity: 0.6;
+  bottom: 0;
+  background-size: 1440px 200px;
+  animation: waveMove 12s linear infinite;
+}
+
+.wave1 {
+  background: url('data:image/svg+xml;utf8,<svg width="1440" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 100C360 200 1080 0 1440 100V200H0V100Z" fill="%23ffffff"/></svg>');
+  animation-duration: 12s;
+  top: 0px;
+  rotate: 180deg;
+}
+
+.wave2 {
+  background: url('data:image/svg+xml;utf8,<svg width="1440" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 120C360 220 1080 20 1440 120V200H0V120Z" fill="%23ffffff"/></svg>');
+  animation-duration: 18s;
+  opacity: 0.4;
+  z-index: 2;
+  top: -2px;
+  rotate: 180deg;
+
+}
+
+.wave3 {
+  background: url('data:image/svg+xml;utf8,<svg width="1440" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 140C360 240 1080 40 1440 140V200H0V140Z" fill="%23ffffff"/></svg>');
+  animation-duration: 25s;
+  opacity: 0.3;
+  z-index: 3; 
+  top: -3px;  
+  rotate: 180deg;
+
+}
+
+@keyframes waveMove {
+  0% { background-position-x: 0; }
+  100% { background-position-x: -1440px; }
+}
