@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet the Team — Team SOAR</title>
+  <style>
+    :root{
+      --bg:#0f4370;
+      --card-bg: rgba(255,255,255,0.06);
+      --card-border: rgba(255,255,255,0.08);
+      --accent:#0161a0;
+      --text:#f6fdff;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg,var(--bg),#053a66 120%);
+      color:var(--text);
+    }
+
+    .wrap{
+      max-width:1100px;
+      margin:40px auto;
+      padding:20px;
+    }
+
+    header {
+      text-align:center;
+      margin-bottom:24px;
+    }
+    header h1{
+      margin:0;
+      font-size:2rem;
+      letter-spacing:0.02em;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    }
+    header p{ margin:6px 0 0; color: #dfeefbcc; }
+
+    /* Grid */
+    .team-grid{
+      display:grid;
+      gap:18px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      align-items:start;
+    }
+
+    /* Card */
+    .member-card{
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding:18px 12px;
+      border-radius:12px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      transition: transform 220ms cubic-bezier(.22,.9,.18,1), box-shadow 220ms ease, background-color 220ms ease;
+      transform-origin:center;
+      will-change: transform;
+      cursor:default;
+      min-height:200px;
+    }
+
+    /* Hover / Focus grow */
+    .member-card:hover,
+    .member-card:focus-within {
+      transform: scale(1.06);
+      box-shadow: 0 18px 40px rgba(2,16,40,0.55);
+      background: rgba(255,255,255,0.08);
+      z-index:5;
+      cursor:pointer;
+    }
+
+    .member-photo{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid rgba(255,255,255,0.06);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+      transition: transform 220ms ease;
+      background: #cbd5e0;
+      margin-bottom:12px;
+    }
+
+    .member-card:hover .member-photo,
+    .member-card:focus-within .member-photo {
+      transform: scale(1.06);
+    }
+
+    .member-name{
+      font-weight:700;
+      margin:6px 0 4px;
+      color:var(--text);
+    }
+    .member-role{
+      margin:0;
+      font-size:0.9rem;
+      color: #cfe7ffcc;
+    }
+
+    /* optional bio */
+    .member-bio{
+      margin-top:10px;
+      font-size:0.88rem;
+      color: #dbeefc;
+      opacity:0.9;
+    }
+
+    /* small screens adjustments */
+    @media (max-width:520px){
+      .wrap{ padding:12px; margin:16px auto; }
+      .member-card{ padding:14px; min-height:170px; }
+      .member-photo{ width:88px; height:88px; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Meet the Team</h1>
+      <p>Sustainable Operations for Aerial Robotics — Team SOAR</p>
+    </header>
+
+    <main class="team-grid" aria-live="polite">
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/public/AnilDeane-SSP_3466-web.jpg" alt="Dr. Deane — Mentor">
+        <h3 class="member-name">Dr. Deane</h3>
+        <p class="member-role">Mentor</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="my-app/public/Profile_Pic1.jpg" alt="Sarah Weiss — Librarian">
+        <h3 class="member-name">Sarah Weiss</h3>
+        <p class="member-role">Librarian</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/public/IMG_9205 - Siloe Selebangue (1).jpeg" alt="Siloe Selebangue — Aerospace Engineering">
+        <h3 class="member-name">Siloe Selebangue</h3>
+        <p class="member-role">Aerospace Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/Resized_20240524_121842_1719191037819 - Michael King (1).jpeg" alt="Michael King — Aerospace Engineering">
+        <h3 class="member-name">Michael King</h3>
+        <p class="member-role">Aerospace Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/hannah_alper_headshot - Hannah Alper.jpeg" alt="Hannah Alper — Electrical Engineering">
+        <h3 class="member-name">Hannah Alper</h3>
+        <p class="member-role">Electrical Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/IMG_3609 - SoloSkills.jpeg" alt="Kiyan Govender — Aerospace Engineering">
+        <h3 class="member-name">Kiyan Govender</h3>
+        <p class="member-role">Aerospace Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/17528811596184244253163488230211 - Josh McDerment.jpg" alt="Josh McDerment — Aerospace Engineering">
+        <h3 class="member-name">Josh McDerment</h3>
+        <p class="member-role">Aerospace Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/Screenshot_20250721-073203_Instagram - Larry Djatang Tankeu.jpg" alt="Larry Djatang-Tankeu — Electrical Engineering">
+        <h3 class="member-name">Larry Djatang‑Tankeu</h3>
+        <p class="member-role">Electrical Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/Screenshot 2025-07-31 172933 - Copy.png" alt="Kevin Nguyen — Computer Engineering">
+        <h3 class="member-name">Kevin Nguyen</h3>
+        <p class="member-role">Computer Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/IMG_3532.JPG" alt="Sam Biddle — Mechanical Engineering">
+        <h3 class="member-name">Sam Biddle</h3>
+        <p class="member-role">Mechanical Engineering</p>
+      </article>
+
+      <article class="member-card" tabindex="0">
+        <img class="member-photo" src="/IMG_20250815_211738 - Ali S.jpg" alt="Ali Shaalan — Mathematics">
+        <h3 class="member-name">Ali Shaalan</h3>
+        <p class="member-role">Mathematics</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
