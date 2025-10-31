@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/soarumd/static/css/main.ceb31688.css",
-    "main.js": "/soarumd/static/js/main.e6eb3ea3.js",
+    "main.js": "/soarumd/static/js/main.61689dc1.js",
     "static/js/453.96453769.chunk.js": "/soarumd/static/js/453.96453769.chunk.js",
     "index.html": "/soarumd/index.html",
     "main.ceb31688.css.map": "/soarumd/static/css/main.ceb31688.css.map",
-    "main.e6eb3ea3.js.map": "/soarumd/static/js/main.e6eb3ea3.js.map",
+    "main.61689dc1.js.map": "/soarumd/static/js/main.61689dc1.js.map",
     "453.96453769.chunk.js.map": "/soarumd/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ceb31688.css",
-    "static/js/main.e6eb3ea3.js"
+    "static/js/main.61689dc1.js"
   ]
 }
